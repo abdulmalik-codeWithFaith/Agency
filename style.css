@@ -1,0 +1,290 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Barlow", sans-serif;
+}
+#container{
+    width: 100%;
+    min-height: 100vh;
+}
+
+#container > section{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("images/desktop/image-header.jpg");
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#container > section header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+#container > section > header img.logo{
+    width: 200px;
+}
+
+nav + img{
+    display: none;
+}
+
+#container > section > header > nav a{
+    color: hsl(0, 100%, 100%);
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+#container > section > header > nav > a + button{
+    padding: 15px 30px;
+    border-radius: 20px;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+#container > section > header > nav > a + button:hover{
+    color: hsl(0, 100%, 100%);
+    background-color: hsl(167, 34%, 41%);
+}
+
+#container > section > header + h1{
+    color: hsl(0, 100%, 100%);
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 50px;
+    letter-spacing: 12px;
+    font-weight: 900;
+    font-size: 50px;
+}
+
+#container > section > header + h1 + img{
+    margin: 50px auto;
+    display: block;
+}
+
+#container > main {
+    width: 100%;
+}
+
+#container > main > section{
+    width: 100%;
+}
+
+#container > main > section > article{
+    width: 100%;
+    display: flex;
+}
+#container > main > section > article > div{
+    width: 50%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+}
+
+#container > main > section > article > div > nav{
+    width: 53%;
+    min-height: 50vh;
+}
+#container > main > section > article > div > nav h1{
+    font-size: 35px;
+    font-weight: bolder;
+    margin-bottom: 30px;
+}
+#container > main > section > article > div > nav p{
+    color:  hsl(232, 10%, 55%);
+    font-size: 13px;
+    line-height: 22px;
+    margin-bottom: 30px;
+}
+
+#container > main > section > article > div > nav span{
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: 5px solid hsl(51, 100%, 49%);
+    cursor: pointer;
+}
+#container > main > section > article > div > nav #stand{
+    border-color: red;
+}
+
+.egg{
+    background-image: url("images/desktop/image-transform.jpg");
+}
+
+.cup{
+    background-image: url("images/desktop/image-stand-out.jpg");
+}
+
+#container > main > section > article > div.Graphic{
+    display: flex;
+    background-image: url("images/desktop/image-graphic-design.jpg");
+    align-items: end;
+}
+
+#container > main > section > article > div.Photography{
+    background-image: url("images/desktop/image-photography.jpg");
+    display: flex;
+    align-items: end;
+}
+
+.Graphic aside{
+    width: 50%;
+    min-height: 20vh;
+    margin-bottom: 50px;
+    text-align: center;
+    color: hsl(167, 40%, 24%);
+}
+
+.Graphic aside h1, .Photography aside h1{
+    margin-bottom: 20px;
+}
+
+.Graphic aside p, .Photography aside p{
+    line-height: 22px;
+}
+
+.Photography aside{
+    width: 50%;
+    min-height: 20vh;
+    margin-bottom: 50px;
+    text-align: center;
+    color: hsl(198, 62%, 26%);
+}
+
+
+#container > main > summary{
+    width: 100%;
+    min-height: 100vh;
+}
+
+summary > h1{
+    text-align: center;
+    margin-top: 130px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color:  hsl(210, 4%, 67%);
+}
+
+summary section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 100px;
+}
+
+summary > section > div{
+    width: 25%;
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+summary > section > div img{
+    width: 60px;
+    border-radius: 100px;
+    margin-bottom: 50px;
+}
+
+summary > section > div p{
+    line-height: 25px;
+    color: hsl(213, 9%, 39%);
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+summary > section > div li{
+    list-style-type: none;
+    margin-top: 10px;
+    font-size: 14px;
+    color: hsl(210, 4%, 67%);
+}
+
+#container > main > article{
+    display: flex;
+}
+
+#container > main > article img{
+    width: 25%;
+}
+
+footer{
+    width: 100%;
+    min-height: 40vh;
+    background-color:  hsl(167, 34%, 41%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer nav{
+    margin: 30px 0px;
+}
+
+footer nav a{
+    color:hsl(212, 27%, 19%);
+    text-decoration: none;
+    margin: 20px;
+}
+footer nav a:hover{
+    color: hsl(0, 100%, 100%);
+}
+
+footer div svg{
+    margin: 20px;
+    cursor: pointer;
+}
+
+footer div svg path:hover{
+    fill: hsl(0, 100%, 100%);
+}
+
+@media screen and (max-width: 800px){
+    #container > section > header nav{
+        display: none;
+    }
+    nav + img{
+        display: inline-block;
+    }
+    #container > main > section > article{
+        flex-direction: column-reverse;
+    }
+    #container > main > section > article + article{
+        flex-direction: column;
+    }
+    #container > main > section > article div{
+        width: 100%;
+    }
+    #container > main > summary > section {
+        flex-direction: column;
+        align-items: center;
+    }
+    #container > main > summary > section div{
+        width: 80%;
+    }
+
+    #container > main > article{
+        flex-wrap: wrap;
+    }
+
+    #container > main > article img{
+        width: 50%;
+    }
+    #container > main > section > article > div{
+        background-position: center;
+        background-size: cover;
+    }
+    .Photography aside{
+        margin-bottom: 0px;
+    }
+}
